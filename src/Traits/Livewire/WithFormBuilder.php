@@ -15,20 +15,25 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Illuminate\Support\Str;
 use Modules\Forms\Models\Form;
 use Modules\Forms\Models\FormType;
-use OmniaDigital\OmniaLibrary\Livewire\WithNotification;
 use OmniaDigital\CatalystCore\Facades\Translate;
+use OmniaDigital\OmniaLibrary\Livewire\WithNotification;
 
 /**
  * Add form builder to livewire component
  */
 trait WithFormBuilder
 {
-    use InteractsWithForms, WithNotification;
+    use InteractsWithForms;
+    use WithNotification;
 
     public $name;
+
     public $slug;
+
     public $content;
+
     public $team_id;
+
     public $form_type_id;
 
     public function save($teamId = null): void
@@ -134,8 +139,8 @@ trait WithFormBuilder
                     ->lazy()
                     ->afterStateUpdated(function (Closure $set, $state) {
                         $name = Str::of($state)
-                                ->snake()
-                                ->lower() . uniqid('_');
+                            ->snake()
+                            ->lower() . uniqid('_');
                         $set('name', $name);
                     })
                     ->required(),
