@@ -4,7 +4,7 @@ namespace OmniaDigital\CatalystForms\Policies;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
 use OmniaDigital\CatalystForms\Models\FormSubmission;
-use OmniaDigital\CatalystForms\Models\User;
+use App\Models\User;
 
 class FormSubmissionPolicy
 {

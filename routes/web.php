@@ -11,6 +11,7 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
 use OmniaDigital\CatalystForms\Livewire\Form;
 
 Route::name('forms.')->prefix('forms')->group(function () {

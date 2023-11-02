@@ -4,7 +4,7 @@ namespace OmniaDigital\CatalystForms\Policies;
 
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
-use OmniaDigital\CatalystForms\Livewire\Form;
+use OmniaDigital\CatalystForms\Models\Form;
 
 class FormPolicy
 {
