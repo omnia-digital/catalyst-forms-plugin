@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Forms\Models;
+namespace OmniaDigital\CatalystFormsPlugin\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -18,7 +18,7 @@ class FormNotification extends Model
 
     // protected static function newFactory()
     // {
-    //     return \Modules\Forms\Database\factories\FormNotificationFactory::new();
+    //     return \OmniaDigital\CatalystFormsPlugin\Database\factories\FormNotificationFactory::new();
     // }
 
     public function getPrintSendDateAttribute()

@@ -1,10 +1,10 @@
 <?php
 
-namespace Modules\Forms\Policies;
+namespace OmniaDigital\CatalystFormsPlugin\Policies;
 
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
-use Modules\Forms\Models\FormType;
+use OmniaDigital\CatalystFormsPlugin\Models\FormType;
 
 class FormTypePolicy
 {

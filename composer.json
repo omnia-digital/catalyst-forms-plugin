@@ -26,7 +26,10 @@
         "laravel/framework": "^10.30",
         "laravel/jetstream": "^4.0",
         "omnia-digital/library": "^2.0",
-        "spatie/laravel-package-tools": "^1.15.0"
+        "spatie/laravel-package-tools": "^1.15.0",
+        "spatie/laravel-permission": "^6.0",
+        "spatie/laravel-sluggable": "^3.5",
+        "thomasjohnkane/snooze": "^2.3"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
@@ -44,7 +47,7 @@
     "autoload": {
         "psr-4": {
             "OmniaDigital\\CatalystFormsPlugin\\": "src/",
-            "OmniaDigital\\CatalystFormsPlugin\\Database\\Factories\\": "database/factories/"
+            "OmniaDigital\\CatalystFormsPlugin\\Database\\": "database/"
         }
     },
     "autoload-dev": {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Modules\Forms\Traits\Livewire;
+namespace OmniaDigital\CatalystFormsPlugin\Traits\Livewire;
 
-use Modules\Forms\Models\Form;
-use Modules\Forms\Models\FormNotification;
+use OmniaDigital\CatalystFormsPlugin\Models\Form;
+use OmniaDigital\CatalystFormsPlugin\Models\FormNotification;
 
 /**
  * Add form management functions to livewire component

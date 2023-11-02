@@ -1,10 +1,7 @@
 <?php
 
-namespace Modules\Forms\Models;
+namespace OmniaDigital\CatalystFormsPlugin\Models;
 
-use App\Models\Team;
-use App\Models\TeamApplication;
-use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 

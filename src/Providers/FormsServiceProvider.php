@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Forms\Providers;
+namespace OmniaDigital\CatalystFormsPlugin\Providers;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
