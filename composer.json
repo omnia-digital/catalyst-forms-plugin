@@ -25,9 +25,9 @@
         "illuminate/contracts": "^10.0",
         "laravel/framework": "^10.30",
         "laravel/jetstream": "^4.0",
-        "omnia-digital/library": "^2.0",
+        "omnia-digital/library": "dev-main",
         "spatie/laravel-package-tools": "^1.15.0",
-        "spatie/laravel-permission": "^6.0",
+        "spatie/laravel-permission": "^5.7",
         "spatie/laravel-sluggable": "^3.5",
         "thomasjohnkane/snooze": "^2.3"
     },
