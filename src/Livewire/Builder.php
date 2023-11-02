@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Forms\Http\Livewire;
+namespace OmniaDigital\CatalystFormsPlugin\Livewire;
 
 use Closure;
 use Filament\Forms\Components\Builder\Block;

@@ -1,13 +1,13 @@
 <?php
 
-namespace Modules\Forms\Http\Livewire;
+namespace OmniaDigital\CatalystFormsPlugin\Livewire;
 
 use App\Models\Team;
 use App\Models\TeamApplication;
 use App\Traits\Team\WithTeamManagement;
-use Modules\Forms\Http\Livewire\Form as LivewireForm;
 use Modules\Forms\Models\Form;
 use Modules\Forms\Models\FormSubmission;
+use OmniaDigital\CatalystFormsPlugin\Livewire\Form as LivewireForm;
 
 class TeamApplicationForm extends LivewireForm
 {

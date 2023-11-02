@@ -11,7 +11,7 @@
 |
 */
 
-use Modules\Forms\Http\Livewire\Form;
+use OmniaDigital\CatalystFormsPlugin\Livewire\Form;
 
 Route::name('forms.')->prefix('forms')->group(function () {
     Route::get('/forms/{form}', Form::class)->name('form');
