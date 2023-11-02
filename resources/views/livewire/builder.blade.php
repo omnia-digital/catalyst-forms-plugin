@@ -4,8 +4,8 @@
             {{ $this->form }}
         </div>
 
-        <x-forms::button type="submit">
+        <x-library::button type="submit">
             Save & preview
-        </x-forms::button>
+        </x-library::button>
     </form>
 </div>

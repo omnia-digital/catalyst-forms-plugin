@@ -6,12 +6,12 @@
                 {{ $this->form }}
             </div>
 
-            <x-forms::button type="submit" class="hover:bg-neutral-dark bg-tertiary w-full focus:ring-1"
+            <x-library::button type="submit" class="hover:bg-neutral-dark bg-tertiary w-full focus:ring-1"
                              wire:loading.attr="disabled" wire:target="submit">
                 <span class="text-white text-lg font-bold" wire:loading.remove
                       wire:target="submit">{{ $submitText }}</span>
                 <span class="text-white text-lg font-bold" wire:loading wire:target="submit">Processing...</span>
-            </x-forms::button>
+            </x-library::button>
         @else
             <div class="p-8 bg-white shadow">
                 <p>{{ Translate::get('Your form was submitted successfully.') }}</p>

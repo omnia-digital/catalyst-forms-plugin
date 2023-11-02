@@ -1,4 +1,4 @@
-@extends('forms::layouts.master')
+@extends('catalyst-forms::layouts.master')
 
 @section('content')
     <x-library::heading.1>Hello World</x-library::heading.1>

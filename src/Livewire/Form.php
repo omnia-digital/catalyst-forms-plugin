@@ -92,7 +92,7 @@ class Form extends Component implements HasForms
 
     public function render()
     {
-        return view('forms::livewire.form');
+        return view('catalyst-forms::livewire.form');
     }
 
     protected function getFormSchema(): array

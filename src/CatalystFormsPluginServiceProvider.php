@@ -9,6 +9,7 @@ use Filament\Support\Assets\Js;
 use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentIcon;
 use Illuminate\Filesystem\Filesystem;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use Illuminate\View\Compilers\BladeCompiler;
 use Livewire\Component;
@@ -42,6 +43,7 @@ class CatalystFormsPluginServiceProvider extends PackageServiceProvider
                 $command
                     ->publishConfigFile()
                     ->publishMigrations()
+                    ->publishAssets()
                     ->askToRunMigrations()
                     ->askToStarRepoOnGitHub('omnia-digital/catalyst-forms-plugin');
             });
@@ -54,6 +56,7 @@ class CatalystFormsPluginServiceProvider extends PackageServiceProvider
 
         if (file_exists($package->basePath('/../database/migrations'))) {
             $package->hasMigrations($this->getMigrations());
+            $package->runsMigrations();
         }
 
         if (file_exists($package->basePath('/../resources/lang'))) {
@@ -142,7 +145,7 @@ class CatalystFormsPluginServiceProvider extends PackageServiceProvider
             ->map([Str::class, 'kebab'])
             ->implode('.');
 
-        $prefix = 'catalyst::';
+        $prefix = 'catalyst-forms::';
         Livewire::component($alias, $class);
 
         Str::endsWith($class, ['\Index', '\index'])
@@ -238,10 +241,12 @@ class CatalystFormsPluginServiceProvider extends PackageServiceProvider
     /**
      * @return array<string>
      */
-    protected function getMigrations(): array
+    protected function getMigrations(): Collection
     {
-        return [
-            'create_catalyst-forms-plugin_table',
-        ];
+        $migrations = collect();
+        foreach (app(Filesystem::class)->files(__DIR__ . '/../database/migrations/') as $file) {
+            $migrations->push($file->getBasename(suffix: '.php'));
+        }
+        return $migrations;
     }
 }

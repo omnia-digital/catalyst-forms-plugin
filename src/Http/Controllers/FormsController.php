@@ -15,7 +15,7 @@ class FormsController extends Controller
      */
     public function index()
     {
-        return view('forms::index');
+        return view('catalyst-forms::index');
     }
 
     /**
@@ -25,7 +25,7 @@ class FormsController extends Controller
      */
     public function create()
     {
-        return view('forms::create');
+        return view('catalyst-forms::create');
     }
 
     /**
@@ -46,7 +46,7 @@ class FormsController extends Controller
      */
     public function show($id)
     {
-        return view('forms::show');
+        return view('catalyst-forms::show');
     }
 
     /**
@@ -57,7 +57,7 @@ class FormsController extends Controller
      */
     public function edit($id)
     {
-        return view('forms::edit');
+        return view('catalyst-forms::edit');
     }
 
     /**

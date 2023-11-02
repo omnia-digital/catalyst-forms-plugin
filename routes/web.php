@@ -14,6 +14,6 @@
 use Illuminate\Support\Facades\Route;
 use OmniaDigital\CatalystForms\Livewire\Form;
 
-Route::name('forms.')->prefix('forms')->group(function () {
+Route::name('forms.')->group(function () {
     Route::get('/forms/{form}', Form::class)->name('form');
 });
