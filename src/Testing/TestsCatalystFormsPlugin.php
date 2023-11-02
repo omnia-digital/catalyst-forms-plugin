@@ -1,6 +1,6 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Testing;
+namespace OmniaDigital\CatalystForms\Testing;
 
 use Livewire\Features\SupportTesting\Testable;
 

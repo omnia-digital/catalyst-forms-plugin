@@ -46,13 +46,13 @@
     },
     "autoload": {
         "psr-4": {
-            "OmniaDigital\\CatalystFormsPlugin\\": "src/",
-            "OmniaDigital\\CatalystFormsPlugin\\Database\\": "database/"
+            "OmniaDigital\\CatalystForms\\": "src/",
+            "OmniaDigital\\CatalystForms\\Database\\": "database/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "OmniaDigital\\CatalystFormsPlugin\\Tests\\": "tests/"
+            "OmniaDigital\\CatalystForms\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -72,10 +72,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "OmniaDigital\\CatalystFormsPlugin\\CatalystFormsPluginServiceProvider"
+                "OmniaDigital\\CatalystForms\\CatalystFormsPluginServiceProvider"
             ],
             "aliases": {
-                "CatalystFormsPlugin": "OmniaDigital\\CatalystFormsPlugin\\Facades\\CatalystFormsPlugin"
+                "CatalystFormsPlugin": "OmniaDigital\\CatalystForms\\Facades\\CatalystFormsPlugin"
             }
         }
     },

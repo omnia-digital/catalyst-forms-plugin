@@ -1,6 +1,6 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Traits\Livewire;
+namespace OmniaDigital\CatalystForms\Traits\Livewire;
 
 use App\Models\Team;
 use Closure;
@@ -13,9 +13,9 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Illuminate\Support\Str;
-use OmniaDigital\CatalystFormsPlugin\Models\Form;
-use OmniaDigital\CatalystFormsPlugin\Models\FormType;
-use OmniaDigital\CatalystFormsPlugin\Facades\Translate;
+use OmniaDigital\CatalystForms\Models\Form;
+use OmniaDigital\CatalystForms\Models\FormType;
+use OmniaDigital\CatalystForms\Facades\Translate;
 use OmniaDigital\OmniaLibrary\Livewire\WithNotification;
 
 /**

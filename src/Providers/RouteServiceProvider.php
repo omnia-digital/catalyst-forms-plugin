@@ -1,6 +1,6 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Providers;
+namespace OmniaDigital\CatalystForms\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;

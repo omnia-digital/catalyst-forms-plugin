@@ -1,6 +1,6 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Livewire;
+namespace OmniaDigital\CatalystForms\Livewire;
 
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\FileUpload;
@@ -9,7 +9,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Livewire\Component;
-use OmniaDigital\CatalystFormsPlugin\Models\FormSubmission;
+use OmniaDigital\CatalystForms\Models\FormSubmission;
 use OmniaDigital\OmniaLibrary\Livewire\WithNotification;
 
 class Form extends Component implements HasForms
@@ -17,7 +17,7 @@ class Form extends Component implements HasForms
     use InteractsWithForms;
     use WithNotification;
 
-    public \OmniaDigital\CatalystFormsPlugin\Models\Form $formModel;
+    public \OmniaDigital\CatalystForms\Models\Form $formModel;
 
     public $data = [];
 
@@ -29,7 +29,7 @@ class Form extends Component implements HasForms
 
     public string $submitText;
 
-    public function mount(\OmniaDigital\CatalystFormsPlugin\Models\Form $form, int $team_id = null, $submitText = 'Submit')
+    public function mount(\OmniaDigital\CatalystForms\Models\Form $form, int $team_id = null, $submitText = 'Submit')
     {
         $this->formModel = $form;
         $this->team_id = $team_id;

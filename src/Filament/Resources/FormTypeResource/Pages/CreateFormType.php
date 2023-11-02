@@ -1,9 +1,9 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormTypeResource\Pages;
+namespace OmniaDigital\CatalystForms\Filament\Resources\FormTypeResource\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
-use OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormTypeResource;
+use OmniaDigital\CatalystForms\Filament\Resources\FormTypeResource;
 
 class CreateFormType extends CreateRecord
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Notifications;
+namespace OmniaDigital\CatalystForms\Notifications;
 
 use App\Models\Team;
 use App\Support\Notification\NotificationCenter;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
-use OmniaDigital\CatalystFormsPlugin\Models\FormNotification;
-use OmniaDigital\CatalystFormsPlugin\Facades\Translate;
+use OmniaDigital\CatalystForms\Models\FormNotification;
+use OmniaDigital\CatalystForms\Facades\Translate;
 
 class FormReminderNotification extends Notification
 {

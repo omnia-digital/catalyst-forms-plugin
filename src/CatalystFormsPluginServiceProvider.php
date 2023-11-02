@@ -1,6 +1,6 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin;
+namespace OmniaDigital\CatalystForms;
 
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
@@ -14,8 +14,8 @@ use Illuminate\View\Compilers\BladeCompiler;
 use Livewire\Component;
 use Livewire\Features\SupportTesting\Testable;
 use Livewire\Livewire;
-use OmniaDigital\CatalystFormsPlugin\Commands\CatalystFormsPluginCommand;
-use OmniaDigital\CatalystFormsPlugin\Testing\TestsCatalystFormsPlugin;
+use OmniaDigital\CatalystForms\Commands\CatalystFormsPluginCommand;
+use OmniaDigital\CatalystForms\Testing\TestsCatalystFormsPlugin;
 use ReflectionClass;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
@@ -26,7 +26,7 @@ class CatalystFormsPluginServiceProvider extends PackageServiceProvider
 {
     public static string $name = 'catalyst-forms-plugin';
 
-    public static string $viewNamespace = 'catalyst-forms-plugin';
+    public static string $viewNamespace = 'catalyst-forms';
 
     public function configurePackage(Package $package): void
     {
@@ -72,7 +72,7 @@ class CatalystFormsPluginServiceProvider extends PackageServiceProvider
     {
         $this->callAfterResolving(BladeCompiler::class, function () use ($package) {
             if (class_exists(Livewire::class) && file_exists($package->basePath('/Livewire'))) {
-                $namespace = 'OmniaDigital\CatalystFormsPlugin\Livewire';
+                $namespace = 'OmniaDigital\CatalystForms\Livewire';
                 $_directory = Str::of($package->basePath('/Livewire'))
                     ->replace('\\', '/')
                     ->toString();

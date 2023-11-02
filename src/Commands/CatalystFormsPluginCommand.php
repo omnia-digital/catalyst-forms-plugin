@@ -1,6 +1,6 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Commands;
+namespace OmniaDigital\CatalystForms\Commands;
 
 use Illuminate\Console\Command;
 

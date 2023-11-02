@@ -1,11 +1,11 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Database\Seeders;
+namespace OmniaDigital\CatalystForms\Database\Seeders;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
-use OmniaDigital\CatalystFormsPlugin\Facades\Translate;
-use OmniaDigital\CatalystFormsPlugin\Models\FormType;
+use OmniaDigital\CatalystForms\Facades\Translate;
+use OmniaDigital\CatalystForms\Models\FormType;
 
 class FormsDatabaseSeeder extends Seeder
 {

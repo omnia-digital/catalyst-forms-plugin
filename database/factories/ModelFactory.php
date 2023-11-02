@@ -1,6 +1,6 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Database\Factories;
+namespace OmniaDigital\CatalystForms\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

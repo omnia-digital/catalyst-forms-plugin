@@ -1,6 +1,6 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Filament\Resources;
+namespace OmniaDigital\CatalystForms\Filament\Resources;
 
 use Closure;
 use Filament\Forms\Components\Select;
@@ -19,11 +19,11 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-use OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormTypeResource\Pages\CreateFormType;
-use OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormTypeResource\Pages\EditFormType;
-use OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormTypeResource\Pages\ListFormsType;
-use OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormTypeResource\Pages\ViewFormType;
-use OmniaDigital\CatalystFormsPlugin\Models\FormType;
+use OmniaDigital\CatalystForms\Filament\Resources\FormTypeResource\Pages\CreateFormType;
+use OmniaDigital\CatalystForms\Filament\Resources\FormTypeResource\Pages\EditFormType;
+use OmniaDigital\CatalystForms\Filament\Resources\FormTypeResource\Pages\ListFormsType;
+use OmniaDigital\CatalystForms\Filament\Resources\FormTypeResource\Pages\ViewFormType;
+use OmniaDigital\CatalystForms\Models\FormType;
 
 class FormTypeResource extends Resource
 {

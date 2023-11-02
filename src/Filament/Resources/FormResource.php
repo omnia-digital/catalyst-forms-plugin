@@ -1,6 +1,6 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Filament\Resources;
+namespace OmniaDigital\CatalystForms\Filament\Resources;
 
 use Closure;
 use Filament\Forms\Components\Builder;
@@ -24,18 +24,18 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-use OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormResource\Pages\CreateForm;
-use OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormResource\Pages\EditForm;
-use OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormResource\Pages\ListForms;
-use OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormResource\Pages\ViewForm;
-use OmniaDigital\CatalystFormsPlugin\Livewire\UserRegistrationForm;
-use OmniaDigital\CatalystFormsPlugin\Models\FormType;
+use OmniaDigital\CatalystForms\Filament\Resources\FormResource\Pages\CreateForm;
+use OmniaDigital\CatalystForms\Filament\Resources\FormResource\Pages\EditForm;
+use OmniaDigital\CatalystForms\Filament\Resources\FormResource\Pages\ListForms;
+use OmniaDigital\CatalystForms\Filament\Resources\FormResource\Pages\ViewForm;
+use OmniaDigital\CatalystForms\Livewire\UserRegistrationForm;
+use OmniaDigital\CatalystForms\Models\FormType;
 
 class FormResource extends Resource
 {
     protected static ?string $label = 'Forms';
 
-    protected static ?string $model = \OmniaDigital\CatalystFormsPlugin\Models\Form::class;
+    protected static ?string $model = \OmniaDigital\CatalystForms\Models\Form::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-users';
 

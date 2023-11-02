@@ -1,10 +1,10 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Policies;
+namespace OmniaDigital\CatalystForms\Policies;
 
 use Illuminate\Auth\Access\HandlesAuthorization;
-use OmniaDigital\CatalystFormsPlugin\Models\FormSubmission;
-use OmniaDigital\CatalystFormsPlugin\Models\User;
+use OmniaDigital\CatalystForms\Models\FormSubmission;
+use OmniaDigital\CatalystForms\Models\User;
 
 class FormSubmissionPolicy
 {

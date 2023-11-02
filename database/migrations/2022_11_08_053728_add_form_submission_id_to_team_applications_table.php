@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use OmniaDigital\CatalystFormsPlugin\Models\FormSubmission;
+use OmniaDigital\CatalystForms\Models\FormSubmission;
 
 return new class extends Migration
 {

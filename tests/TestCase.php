@@ -1,6 +1,6 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Tests;
+namespace OmniaDigital\CatalystForms\Tests;
 
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
@@ -16,7 +16,7 @@ use Filament\Tables\TablesServiceProvider;
 use Filament\Widgets\WidgetsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Livewire\LivewireServiceProvider;
-use OmniaDigital\CatalystFormsPlugin\CatalystFormsPluginServiceProvider;
+use OmniaDigital\CatalystForms\CatalystFormsPluginServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use RyanChandler\BladeCaptureDirective\BladeCaptureDirectiveServiceProvider;
 
@@ -27,7 +27,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'OmniaDigital\\CatalystFormsPlugin\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'OmniaDigital\\CatalystForms\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 

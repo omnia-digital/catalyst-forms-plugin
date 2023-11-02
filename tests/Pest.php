@@ -1,5 +1,5 @@
 <?php
 
-use OmniaDigital\CatalystFormsPlugin\Tests\TestCase;
+use OmniaDigital\CatalystForms\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

@@ -46,7 +46,7 @@ return [
 ## Usage
 
 ```php
-$catalystFormsPlugin = new OmniaDigital\CatalystFormsPlugin();
+$catalystFormsPlugin = new OmniaDigital\CatalystForms();
 echo $catalystFormsPlugin->echoPhrase('Hello, OmniaDigital!');
 ```
 

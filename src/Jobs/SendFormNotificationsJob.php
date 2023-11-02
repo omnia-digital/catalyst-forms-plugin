@@ -1,6 +1,6 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Jobs;
+namespace OmniaDigital\CatalystForms\Jobs;
 
 use App\Models\Team;
 use Carbon\Carbon;
@@ -10,8 +10,8 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use OmniaDigital\CatalystFormsPlugin\Notifications\FormReminderNotification;
-use OmniaDigital\CatalystFormsPlugin\Models\FormNotification;
+use OmniaDigital\CatalystForms\Notifications\FormReminderNotification;
+use OmniaDigital\CatalystForms\Models\FormNotification;
 
 class SendFormNotificationsJob implements ShouldQueue
 {

@@ -1,13 +1,13 @@
 <?php
 
+use App\Models\Team;
+use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use OmniaDigital\CatalystFormsPlugin\Models\Form;
-use OmniaDigital\CatalystFormsPlugin\Models\FormTemplate;
-use OmniaDigital\CatalystFormsPlugin\Models\FormType;
-use OmniaDigital\CatalystFormsPlugin\Models\Team;
-use OmniaDigital\CatalystFormsPlugin\Models\User;
+use OmniaDigital\CatalystForms\Models\Form;
+use OmniaDigital\CatalystForms\Models\FormTemplate;
+use OmniaDigital\CatalystForms\Models\FormType;
 
 return new class extends Migration
 {

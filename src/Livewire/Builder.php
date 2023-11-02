@@ -1,6 +1,6 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Livewire;
+namespace OmniaDigital\CatalystForms\Livewire;
 
 use Closure;
 use Filament\Forms\Components\Builder\Block;
@@ -26,7 +26,7 @@ class Builder extends Component implements HasForms
 
     public function save(): void
     {
-        $form = \OmniaDigital\CatalystFormsPlugin\Models\Form::create($this->form->getState());
+        $form = \OmniaDigital\CatalystForms\Models\Form::create($this->form->getState());
 
         redirect()->route('form', ['form' => $form]);
     }

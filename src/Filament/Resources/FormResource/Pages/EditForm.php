@@ -1,10 +1,10 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormResource\Pages;
+namespace OmniaDigital\CatalystForms\Filament\Resources\FormResource\Pages;
 
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\EditRecord;
-use OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormResource;
+use OmniaDigital\CatalystForms\Filament\Resources\FormResource;
 
 class EditForm extends EditRecord
 {

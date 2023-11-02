@@ -1,10 +1,10 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormSubmissionResource\Pages;
+namespace OmniaDigital\CatalystForms\Filament\Resources\FormSubmissionResource\Pages;
 
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\ListRecords;
-use OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormSubmissionResource;
+use OmniaDigital\CatalystForms\Filament\Resources\FormSubmissionResource;
 
 class ListFormSubmissions extends ListRecords
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Policies;
+namespace OmniaDigital\CatalystForms\Policies;
 
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
-use OmniaDigital\CatalystFormsPlugin\Livewire\Form;
+use OmniaDigital\CatalystForms\Livewire\Form;
 
 class FormPolicy
 {

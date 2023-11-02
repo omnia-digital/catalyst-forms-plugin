@@ -1,16 +1,16 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Facades;
+namespace OmniaDigital\CatalystForms\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \OmniaDigital\CatalystFormsPlugin\CatalystFormsPlugin
+ * @see \OmniaDigital\CatalystForms\CatalystFormsPlugin
  */
 class CatalystFormsPlugin extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \OmniaDigital\CatalystFormsPlugin\CatalystFormsPlugin::class;
+        return \OmniaDigital\CatalystForms\CatalystFormsPlugin::class;
     }
 }

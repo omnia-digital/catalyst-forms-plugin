@@ -1,6 +1,6 @@
 <?php
 
-namespace OmniaDigital\CatalystFormsPlugin\Filament\Resources;
+namespace OmniaDigital\CatalystForms\Filament\Resources;
 
 use Closure;
 use Filament\Forms\Components\Select;
@@ -17,13 +17,13 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Model;
-use OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormSubmissionResource\Pages\CreateFormSubmission;
-use OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormSubmissionResource\Pages\EditFormSubmission;
-use OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormSubmissionResource\Pages\ListFormSubmissions;
-use OmniaDigital\CatalystFormsPlugin\Filament\Resources\FormSubmissionResource\Pages\ViewFormSubmission;
-use OmniaDigital\CatalystFormsPlugin\Models\FormSubmission;
-use OmniaDigital\CatalystFormsPlugin\Models\Team;
-use OmniaDigital\CatalystFormsPlugin\Models\User;
+use OmniaDigital\CatalystForms\Filament\Resources\FormSubmissionResource\Pages\CreateFormSubmission;
+use OmniaDigital\CatalystForms\Filament\Resources\FormSubmissionResource\Pages\EditFormSubmission;
+use OmniaDigital\CatalystForms\Filament\Resources\FormSubmissionResource\Pages\ListFormSubmissions;
+use OmniaDigital\CatalystForms\Filament\Resources\FormSubmissionResource\Pages\ViewFormSubmission;
+use OmniaDigital\CatalystForms\Models\FormSubmission;
+use OmniaDigital\CatalystForms\Models\Team;
+use OmniaDigital\CatalystForms\Models\User;
 
 class FormSubmissionResource extends Resource
 {
@@ -42,7 +42,7 @@ class FormSubmissionResource extends Resource
                 Select::make('form_id')
                     ->label('Form')
                     ->options(
-                        \OmniaDigital\CatalystFormsPlugin\Models\Form::get()
+                        \OmniaDigital\CatalystForms\Models\Form::get()
                             ->mapWithKeys(function ($item, $key) {
                                 return [$item['id'] => $item['id'] . ' - ' . $item['name']];
                             })
