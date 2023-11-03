@@ -3,6 +3,7 @@
 namespace OmniaDigital\CatalystForms\Filament\Resources;
 
 use App\Models\Team;
+use App\Models\User;
 use Closure;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
@@ -23,7 +24,6 @@ use OmniaDigital\CatalystForms\Filament\Resources\FormSubmissionResource\Pages\E
 use OmniaDigital\CatalystForms\Filament\Resources\FormSubmissionResource\Pages\ListFormSubmissions;
 use OmniaDigital\CatalystForms\Filament\Resources\FormSubmissionResource\Pages\ViewFormSubmission;
 use OmniaDigital\CatalystForms\Models\FormSubmission;
-use App\Models\User;
 
 class FormSubmissionResource extends Resource
 {

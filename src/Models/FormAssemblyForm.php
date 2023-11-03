@@ -10,7 +10,8 @@ use Spatie\Sluggable\SlugOptions;
 
 class FormAssemblyForm extends Model
 {
-    use HasFactory, HasSlug;
+    use HasFactory;
+    use HasSlug;
 
     protected $guarded = [];
 

@@ -29,7 +29,7 @@ class CatalystFormsPlugin implements Plugin
     {
         $panel->discoverResources(__DIR__ . '/Filament/Resources', 'OmniaDigital\\CatalystForms\\Filament\\Resources')
             ->discoverPages(in: __DIR__ . '/Filament/Pages', for: 'OmniaDigital\\CatalystForms\\Filament\\Pages')
-            ->discoverWidgets(in: __DIR__.'/Filament/Widgets', for: 'OmniaDigital\\CatalystForms\\Filament\\Widgets');
+            ->discoverWidgets(in: __DIR__ . '/Filament/Widgets', for: 'OmniaDigital\\CatalystForms\\Filament\\Widgets');
     }
 
     public function boot(Panel $panel): void

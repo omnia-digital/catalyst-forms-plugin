@@ -89,11 +89,7 @@ class CatalystFormsPluginServiceProvider extends PackageServiceProvider
     /**
      * Register component directory.
      *
-     * @param string $directory
-     * @param string $namespace
-     * @param string $aliasPrefix
-     *
-     * @return void
+     * @param  string  $aliasPrefix
      */
     protected function registerComponentDirectory(string $directory, string $namespace): void
     {
@@ -102,19 +98,21 @@ class CatalystFormsPluginServiceProvider extends PackageServiceProvider
         /**
          * Directory doesn't existS.
          */
-        if (!$filesystem->isDirectory($directory)) {
+        if (! $filesystem->isDirectory($directory)) {
             return;
         }
 
         $aliases = collect();
 
         collect($filesystem->allFiles($directory))
-            ->map(fn(SplFileInfo $file) => Str::of($namespace)
+            ->map(fn (SplFileInfo $file) => Str::of($namespace)
                 ->append("\\{$file->getRelativePathname()}")
                 ->replace(['/', '.php'], ['\\', ''])
                 ->toString())
-            ->filter(fn($class) => (is_subclass_of($class,
-                    Component::class) && !(new ReflectionClass($class))->isAbstract()))
+            ->filter(fn ($class) => (is_subclass_of(
+                $class,
+                Component::class
+            ) && ! (new ReflectionClass($class))->isAbstract()))
             ->each(function ($class) use ($namespace, $aliases) {
                 $alias = Str::of($class)
                     ->after($namespace . '\\')
@@ -130,11 +128,7 @@ class CatalystFormsPluginServiceProvider extends PackageServiceProvider
     /**
      * Register livewire single component.
      *
-     * @param string $class
-     * @param string $namespace
-     * @param string $aliasPrefix
-     *
-     * @return void
+     * @param  string  $aliasPrefix
      */
     private function registerSingleComponent(string $class, string $namespace): void
     {
@@ -152,7 +146,6 @@ class CatalystFormsPluginServiceProvider extends PackageServiceProvider
             ? Livewire::component($prefix . Str::beforeLast($alias, '.index'), $class)
             : Livewire::component($prefix . $alias, $class);
     }
-
 
     public function packageRegistered(): void
     {
@@ -227,7 +220,7 @@ class CatalystFormsPluginServiceProvider extends PackageServiceProvider
      */
     protected function getRoutes(): array
     {
-        return ['web','api'];
+        return ['web', 'api'];
     }
 
     /**
@@ -247,6 +240,7 @@ class CatalystFormsPluginServiceProvider extends PackageServiceProvider
         foreach (app(Filesystem::class)->files(__DIR__ . '/../database/migrations/') as $file) {
             $migrations->push($file->getBasename(suffix: '.php'));
         }
+
         return $migrations;
     }
 }

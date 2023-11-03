@@ -7,8 +7,8 @@ use App\Support\Notification\NotificationCenter;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
-use OmniaDigital\CatalystForms\Models\FormNotification;
 use OmniaDigital\CatalystForms\Facades\Translate;
+use OmniaDigital\CatalystForms\Models\FormNotification;
 
 class FormReminderNotification extends Notification
 {
