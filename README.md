@@ -5,9 +5,7 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/omnia-digital/catalyst-forms-plugin/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/omnia-digital/catalyst-forms-plugin/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/omnia-digital/catalyst-forms-plugin.svg?style=flat-square)](https://packagist.org/packages/omnia-digital/catalyst-forms-plugin)
 
-
-
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Allows customization of Forms using a Drag-and-Drop UI within a Filament Admin Panel. Built for the Catalyst Framework, but can be used in most Laravel packages.
 
 ## Installation
 
