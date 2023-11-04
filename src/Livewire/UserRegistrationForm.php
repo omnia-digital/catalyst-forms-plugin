@@ -2,7 +2,7 @@
 
 namespace OmniaDigital\CatalystForms\Livewire;
 
-use App\Actions\Fortify\CreateNewUser;
+use OmniaDigital\CatalystCore\Actions\Fortify\CreateNewUser;
 use Illuminate\Auth\Events\Registered;
 use OmniaDigital\CatalystForms\Livewire\Form as LivewireForm;
 use OmniaDigital\CatalystForms\Models\FormSubmission;

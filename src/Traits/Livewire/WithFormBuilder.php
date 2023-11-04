@@ -2,7 +2,7 @@
 
 namespace OmniaDigital\CatalystForms\Traits\Livewire;
 
-use App\Models\Team;
+use OmniaDigital\CatalystCore\Models\Team;
 use Closure;
 use Filament\Forms\Components\Builder;
 use Filament\Forms\Components\Builder\Block;

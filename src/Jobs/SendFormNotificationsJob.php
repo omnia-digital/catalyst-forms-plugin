@@ -2,7 +2,7 @@
 
 namespace OmniaDigital\CatalystForms\Jobs;
 
-use App\Models\Team;
+use OmniaDigital\CatalystCore\Models\Team;
 use Carbon\Carbon;
 use Carbon\CarbonTimeZone;
 use Illuminate\Bus\Queueable;
