@@ -2,7 +2,6 @@
 
 namespace OmniaDigital\CatalystForms\Traits\Livewire;
 
-use OmniaDigital\CatalystCore\Models\Team;
 use Closure;
 use Filament\Forms\Components\Builder;
 use Filament\Forms\Components\Builder\Block;
@@ -13,6 +12,7 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Illuminate\Support\Str;
+use OmniaDigital\CatalystCore\Models\Team;
 use OmniaDigital\CatalystForms\Facades\Translate;
 use OmniaDigital\CatalystForms\Models\Form;
 use OmniaDigital\CatalystForms\Models\FormType;
