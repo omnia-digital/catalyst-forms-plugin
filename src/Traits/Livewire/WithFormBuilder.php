@@ -13,9 +13,9 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Illuminate\Support\Str;
+use OmniaDigital\CatalystForms\Facades\Translate;
 use OmniaDigital\CatalystForms\Models\Form;
 use OmniaDigital\CatalystForms\Models\FormType;
-use OmniaDigital\CatalystForms\Facades\Translate;
 use OmniaDigital\OmniaLibrary\Livewire\WithNotification;
 
 /**
