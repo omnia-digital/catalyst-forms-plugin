@@ -192,7 +192,7 @@ class CatalystFormsPluginServiceProvider extends PackageServiceProvider
     {
         return [
             // AlpineComponent::make('catalyst-forms-plugin', __DIR__ . '/../resources/dist/components/catalyst-forms-plugin.js'),
-//            Css::make('catalyst-forms-plugin-styles', __DIR__ . '/../resources/dist/catalyst-forms-plugin.css'),
+            //            Css::make('catalyst-forms-plugin-styles', __DIR__ . '/../resources/dist/catalyst-forms-plugin.css'),
             Js::make('catalyst-forms-plugin-scripts', __DIR__ . '/../resources/dist/catalyst-forms-plugin.js'),
         ];
     }
