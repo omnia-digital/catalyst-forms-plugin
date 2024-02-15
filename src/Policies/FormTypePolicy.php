@@ -2,8 +2,8 @@
 
 namespace OmniaDigital\CatalystForms\Policies;
 
-use OmniaDigital\CatalystCore\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
+use OmniaDigital\CatalystCore\Models\User;
 use OmniaDigital\CatalystForms\Models\FormType;
 
 class FormTypePolicy

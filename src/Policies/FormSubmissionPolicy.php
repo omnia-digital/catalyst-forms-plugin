@@ -3,6 +3,7 @@
 namespace OmniaDigital\CatalystForms\Policies;
 
 use App\Models\User;
+use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 use OmniaDigital\CatalystForms\Models\FormSubmission;
 

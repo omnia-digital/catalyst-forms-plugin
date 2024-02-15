@@ -1,10 +1,10 @@
 <?php
 
-use OmniaDigital\CatalystCore\Models\Team;
-use OmniaDigital\CatalystCore\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use OmniaDigital\CatalystCore\Models\Team;
+use OmniaDigital\CatalystCore\Models\User;
 use OmniaDigital\CatalystForms\Models\Form;
 use OmniaDigital\CatalystForms\Models\FormTemplate;
 use OmniaDigital\CatalystForms\Models\FormType;

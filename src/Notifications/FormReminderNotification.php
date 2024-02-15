@@ -2,11 +2,11 @@
 
 namespace OmniaDigital\CatalystForms\Notifications;
 
-use OmniaDigital\CatalystCore\Models\Team;
-use OmniaDigital\CatalystCore\Support\Notification\NotificationCenter;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
+use OmniaDigital\CatalystCore\Models\Team;
+use OmniaDigital\CatalystCore\Support\Notification\NotificationCenter;
 use OmniaDigital\CatalystForms\Facades\Translate;
 use OmniaDigital\CatalystForms\Models\FormNotification;
 

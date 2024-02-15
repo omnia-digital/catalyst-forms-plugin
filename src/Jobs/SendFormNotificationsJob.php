@@ -2,7 +2,6 @@
 
 namespace OmniaDigital\CatalystForms\Jobs;
 
-use OmniaDigital\CatalystCore\Models\Team;
 use Carbon\Carbon;
 use Carbon\CarbonTimeZone;
 use Illuminate\Bus\Queueable;
@@ -10,6 +9,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
+use OmniaDigital\CatalystCore\Models\Team;
 use OmniaDigital\CatalystForms\Models\FormNotification;
 use OmniaDigital\CatalystForms\Notifications\FormReminderNotification;
 
