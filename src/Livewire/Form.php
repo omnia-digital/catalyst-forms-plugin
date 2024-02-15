@@ -29,7 +29,7 @@ class Form extends Component implements HasForms
 
     public string $submitText;
 
-    public function mount(\OmniaDigital\CatalystForms\Models\Form $form, int $team_id = null, $submitText = 'Submit')
+    public function mount(\OmniaDigital\CatalystForms\Models\Form $form, ?int $team_id = null, $submitText = 'Submit')
     {
         $this->formModel = $form;
         $this->team_id = $team_id;
